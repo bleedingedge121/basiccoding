@@ -1,4 +1,4 @@
-# Java + GitHub Collaborative Learning Roadmap
+# Java + GitHub Collaborative Learning Lab
 
 ## Goal
 
@@ -64,10 +64,9 @@ First master:
 
 ---
 
-# Rule 6
+## Rule 6
 
 Consistency matters more than speed.
-
 Even:
 
 ```text
