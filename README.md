@@ -1,4 +1,4 @@
-# Java + GitHub Collaborative Learning Roadmap
+# Java + GitHub Collaborative Learning Lab
 
 ## Goal
 
