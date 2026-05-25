@@ -2,8 +2,11 @@ package helloworld;
 
 public class Helloworld {
 
-	public static void main(String[] args) {
-		System.out.println("Hello World");
-	}
+  public static void main(String[] args) {
+    for (int i = 0; i <= 5; i++) {
+      System.out.println("Hello World");
+    }
+
+  }
 
 }
