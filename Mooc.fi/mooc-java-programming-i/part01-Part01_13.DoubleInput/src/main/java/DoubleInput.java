@@ -10,7 +10,7 @@ public class DoubleInput {
 
         // Reading input and then converting the String input to Integer
 
-        int number = Integer.valueOf(scanner.nextLine());
+        double number = Double.valueOf(scanner.nextLine());
 
         // Printing the input number
         System.out.print("You gave the number ");
