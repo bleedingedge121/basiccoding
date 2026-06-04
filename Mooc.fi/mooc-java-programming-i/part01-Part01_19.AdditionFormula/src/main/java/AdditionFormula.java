@@ -15,7 +15,7 @@ public class AdditionFormula {
 
     // Sum
 
-    System.out.println("The sum of the numbers is " + (first + second));
+    System.out.println(first + " + " + second + " = " + (first + second));
 
   }
 }
