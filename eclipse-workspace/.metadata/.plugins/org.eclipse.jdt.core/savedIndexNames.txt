@@ -1,0 +1,5 @@
+INDEX VERSION 1.134+/home/nexus/Coding/eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core
+1014571469.index
+1865797976.index
+1192637205.index
+2089348824.index
