@@ -22,7 +22,7 @@ public class pattern5 {
                 if (j <= n - i) {
                     System.out.print(" ");
                 } else {
-                    System.out.print(i + " ");
+                    System.out.print(i);
                 }
             }
             System.out.println();
