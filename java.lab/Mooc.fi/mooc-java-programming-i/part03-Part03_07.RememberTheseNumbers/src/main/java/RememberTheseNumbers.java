@@ -9,13 +9,17 @@ public class RememberTheseNumbers {
 
         ArrayList<Integer> numbers = new ArrayList<>();
         while (true) {
-            int luku = Integer.valueOf(scanner.nextLine());
-            if (luku == -1) {
+            int n = Integer.valueOf(scanner.nextLine());
+            if (n == -1) {
                 break;
             }
 
-            numbers.add(luku);
+            numbers.add(n);
         }
-
+        int i = 0;
+        while (i < numbers.size()) {
+            System.out.println(numbers.get(i));
+            i++;
+        }
     }
 }
