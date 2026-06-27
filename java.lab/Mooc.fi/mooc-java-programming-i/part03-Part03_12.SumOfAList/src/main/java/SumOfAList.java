@@ -19,6 +19,13 @@ public class SumOfAList {
 
         System.out.println("");
 
-        // toteuta listan lukujen summan laskeminen tänne
+        int avg = 0;
+
+        for (int i = 0; i < list.size(); i++) {
+            avg = avg + list.get(i);
+        }
+
+        System.out.println("Average: " + avg);
+
     }
 }
