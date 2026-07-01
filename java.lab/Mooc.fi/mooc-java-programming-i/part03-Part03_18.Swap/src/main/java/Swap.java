@@ -12,6 +12,8 @@ public class Swap {
         array[3] = 7;
         array[4] = 9;
 
+        // Printing array
+
         int index = 0;
         while (index < array.length) {
             System.out.println(array[index]);
@@ -19,9 +21,18 @@ public class Swap {
         }
         System.out.println("");
 
-        // Implement here
-        // asking for the two indices
+        // Asking for the two indices
+
+        System.out.println("Give two indices to swap:");
+        int index1 = Integer.valueOf(scanner.nextLine());
+        int index2 = Integer.valueOf(scanner.nextLine());
         // and then swapping them
+
+        int temp = array[index1];
+        array[index1] = array[index2];
+        array[index2] = temp;
+
+        // Printing final array
 
         System.out.println("");
         index = 0;
