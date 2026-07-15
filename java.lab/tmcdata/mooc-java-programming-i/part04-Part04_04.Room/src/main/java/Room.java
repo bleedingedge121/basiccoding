@@ -3,6 +3,8 @@ public class Room {
     private int seats;
 
     public Room(String classCode, int numberOfSeats) {
+        this.code = classCode;
+        this.seats = numberOfSeats;
 
     }
 

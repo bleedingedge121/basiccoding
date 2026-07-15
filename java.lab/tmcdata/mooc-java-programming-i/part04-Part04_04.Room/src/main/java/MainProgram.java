@@ -6,8 +6,10 @@ public class MainProgram {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Follow the instructions carefully 
+        // Follow the instructions carefully
         // and run the tests.
+        Room r1 = new Room("10", 3);
+
     }
 
 }
