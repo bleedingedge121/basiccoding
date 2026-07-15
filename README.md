@@ -1,14 +1,16 @@
-# Java + GitHub Collaborative Learning Lab
+# Java + Learning Lab
 
 ## Goal
 
-Two complete beginners learn:
+Learn:
+
 - programming fundamentals,
 - Java,
 - Git/GitHub collaboration,
 - debugging,
 - project building,
 - and teamwork.
+
 ---
 
 # Rules for Fast Learning
@@ -38,41 +40,5 @@ for(int i = 0; i < 5; i++) {
 
 }
 ```
-
----
-
-## Rule 4
-
-Review each other’s code.
-Reading code improves skill very fast.
-
----
-
-## Rule 5
-Do not jump into frameworks early.
-
-Avoid:
-- Spring Boot,
-- Android,
-- advanced backend frameworks.
-
-First master:
-- logic,
-- OOP,
-- debugging,
-- Git.
-
----
-
-## Rule 6
-
-Consistency matters more than speed.
-Even:
-
-```text
-1 hour daily for 6 months
-```
-
-is enough to become comfortable with Java fundamentals.
 
 ---
