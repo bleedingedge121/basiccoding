@@ -1,0 +1,29 @@
+public class Book {
+    private String title;
+    private int pages;
+    private String pubYear;
+
+    public Book(String title, int pages, String pubYear) {
+        this.title = title;
+        this.pages = pages;
+        this.pubYear = pubYear;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public int getPages() {
+        return pages;
+    }
+
+    public String getPubYear() {
+        return pubYear;
+    }
+
+    @Override
+    public String toString() {
+        return this.title + ", " + this.pages + " pages" + ", " + this.pubYear;
+    }
+
+}
