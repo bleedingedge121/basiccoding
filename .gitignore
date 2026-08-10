@@ -27,3 +27,6 @@ replay_pid*
 # kworkspace/
 # gworkspace/
 /bin/
+
+# C
+*.exe
