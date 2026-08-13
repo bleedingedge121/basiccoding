@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 
-int main() {
+int main()
+{
     double a, b, c, discriminant, root1, root2, realPart, imagPart;
 
     printf("Enter coefficients a: ");
@@ -11,8 +12,8 @@ int main() {
     printf("\nEnter coefficient c: ");
     scanf("%lf", &c);
 
-
-    if (a == 0) {
+    if (a == 0)
+    {
         printf("Coefficient 'a' cannot be zero.\n");
         return 0;
     }
@@ -21,7 +22,8 @@ int main() {
 
     // If D > 0
 
-    if(discriminant > 0 ){
+    if (discriminant > 0)
+    {
         root1 = (-b + sqrt(discriminant)) / (2 * a);
         root2 = (-b - sqrt(discriminant)) / (2 * a);
         printf("Roots are real and distinct.\n");
@@ -31,7 +33,8 @@ int main() {
 
     // If D == 0
 
-    else if (discriminant == 0) {
+    else if (discriminant == 0)
+    {
         root1 = root2 = -b / (2 * a);
         printf("Roots are real and equal.\n");
         printf("Root 1 = Root 2 = %.2lf\n", root1);
@@ -39,7 +42,8 @@ int main() {
 
     // If D < 0
 
-    else{
+    else
+    {
         realPart = -b / (2 * a);
         imagPart = sqrt(-discriminant) / (2 * a);
         printf("Roots are complex and different.\n");
