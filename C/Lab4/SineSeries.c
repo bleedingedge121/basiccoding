@@ -31,7 +31,7 @@ int main()
             factorial = factorial * j;
         }
 
-        // 3. Add or subtract the term based on its position
+        // Add or subtract the term based on its position
         if (i % 2 == 1)
         {
             sum = sum + (power / factorial); // Odd terms are added
@@ -42,7 +42,7 @@ int main()
         }
     }
 
-    // 4. Print the final answer
+    
     printf("Sin(%.2f) up to %d terms = %.4f\n", x, n, sum);
 
     return 0;
