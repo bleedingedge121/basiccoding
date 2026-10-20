@@ -9,8 +9,11 @@ int main()
     printf("Enter your first name: ");
     scanf("%s", name);
 
+    // Find the length of the name
     while (name[length] != '\0')
+    {
         length++;
+    }
 
     // fill 2x3 matrix row-wise
 
@@ -36,7 +39,9 @@ int main()
     for (i = 0; i < 2; i++)
     {
         for (j = 0; j < 3; j++)
+        {
             transpose[j][i] = matrix[i][j];
+        }
     }
 
     // Print Original and Transpose Matrices
@@ -45,7 +50,10 @@ int main()
     for (i = 0; i < 2; i++)
     {
         for (j = 0; j < 3; j++)
+        {
             printf("%d\t", matrix[i][j]);
+        }
+
         printf("\n");
     }
 
@@ -53,7 +61,10 @@ int main()
     for (i = 0; i < 3; i++)
     {
         for (j = 0; j < 2; j++)
+        {
             printf("%d\t", transpose[i][j]);
+        }
+
         printf("\n");
     }
 

@@ -12,7 +12,9 @@ int main()
     // Find the length of the registration number
 
     while (reg[length] != '\0')
+    {
         length++;
+    }
 
     if (length > 12)
         start = length - 12; // take the last 12 digits
@@ -38,7 +40,10 @@ int main()
     for (i = 0; i < 3; i++)
     {
         for (j = 0; j < 4; j++)
+        {
             printf("%d\t", matrix[i][j]);
+        }
+
         printf("\n");
     }
 
@@ -49,7 +54,10 @@ int main()
     {
         sum = 0;
         for (j = 0; j < 4; j++)
+        {
             sum += matrix[i][j];
+        }
+
         printf("Row %d = %d\n", i + 1, sum);
     }
 
