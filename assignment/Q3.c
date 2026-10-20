@@ -5,6 +5,8 @@ int main()
     char reg[50];
     int a[5], i, j, t, length = 0, pass;
 
+    // Read the registration number
+
     printf("Enter registration number: ");
     scanf("%s", reg);
 
@@ -33,13 +35,15 @@ int main()
     {
         for (j = 0; j < 5 - pass; j++)
         {
-            if (a[j] > a[j + 1])
+            if (a[j] > a[j + 1]) // Swap
             {
                 t = a[j];
                 a[j] = a[j + 1];
                 a[j + 1] = t;
             }
         }
+
+        // Print the array after each pass
 
         printf("\nAfter Pass %d: ", pass);
         for (i = 0; i < 5; i++)
