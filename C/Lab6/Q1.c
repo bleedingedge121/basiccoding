@@ -1,71 +1,60 @@
 #include <stdio.h>
+#include <stdbool.h>
 
-int main(){
-    int m,n,sym;
+int main() {
+    int rows, cols;
 
-    printf("Enter number of Rows:\n");
-    scanf("%d", &m);
-    printf("Enter number of columns:\n");
-    scanf("%d", &n);
+    // Ask the user for the number of rows and columns
+    printf("Enter the number of rows: ");
+    scanf("%d", &rows);
+    printf("Enter the number of columns: ");
+    scanf("%d", &cols);
 
-    int matrix[m][n];
+    // Check if square matrix
+    if(rows != cols){
+        printf("The matrix is not a square matrix\n");
+        return 0;
+    }
 
-    printf("Enter The Elements: ");
+    // Declare the 2D array (Matrix) with the user-defined dimensions
+    int matrix[rows][cols];
 
-    //Input 2D array
+    // Take matrix elements as input using nested loops
+    printf("\nEnter the elements of the matrix:\n");
+    for (int i = 0; i < rows; i++) {       // Outer loop for rows
+        for (int j = 0; j < cols; j++) {   // Inner loop for columns
+            printf("Element [%d][%d]: ", i+1, j+1);
+            scanf("%d", &matrix[i][j]);     // Store input at row i, column j
+        }
+    }
 
-    for(int i = 0;i < m; i++){
-        for(int j = 0; j < n; j++){
-            printf("Enter elemnt a %d%d : ", i,j);
-            scanf("%d", &matrix[i][j]);
+    // Print the matrix to verify the input
+    printf("\nThe entered matrix is:\n");
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            printf("%d\t", matrix[i][j]);  
+        }
+        printf("\n");                      // Newline after each row
+    }
+
+    // Verify if the matrix is symmetric 
+    
+    bool symmetric = true; // assume it is symmetric
+    
+    for (int i = 1; i < rows; i++) {
+        for (int j = 0; j < i; j++) {
+            if (matrix[i][j] != matrix[j][i]) {
+                symmetric = false;
+            }
         }
     }    
 
-    //Print 2D array
-    
-    for(int i = 0;i < m; i++){
-        for(int j = 0; j < n; j++){
-            printf("%d\t",matrix[i][j]);
-        }
-        printf("\n");
-    }
-    
-    
-    // Transpose the matrix/Array and Check for symmetric matrix
-
-    int matrixT[n][m];
-    sym = 1;
-
-    for (int i = 0; i < m; i++)
-    {
-        for(int j =0; j < n; j++){
-            
-            if (matrixT[j][i] != matrix[i][j])
-            {
-                sym = 0;
-            }
-            matrixT[j][i] = matrix[i][j];
-            
-        }
-    }
-    
-
-    //Print Transpose Matrix/Array
-    printf("Transpose Matrix: \n");
-
-    for(int i = 0;i < n; i++){
-        for(int j = 0; j < m; j++){
-            printf("%d\t",matrixT[i][j]);
-        }
-        printf("\n");
+    if (symmetric){
+        printf("The Matrix is Symmetric");
+    }else{
+        printf("The Matrix is not Symmetric");
     }
 
-    if (sym == 1)
-    {
-       printf("The Matrix is symmetric\n");
-    }
-    else{
-        printf("The matrix is not symmetric\n");
-    }
 
+    return 0;
 }
